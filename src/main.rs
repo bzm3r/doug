@@ -2,6 +2,7 @@ pub mod editing;
 pub mod import;
 pub mod shapes;
 pub mod ui;
+pub mod renderer;
 
 use bevy::ecs::archetype::Archetypes;
 use bevy::ecs::component::{ComponentId, Components};
@@ -19,6 +20,8 @@ use layout21::raw;
 use editing::EditingPlugin;
 use import::Layout21ImportPlugin;
 use ui::UIPlugin;
+
+use renderer::DougRendererPlugin;
 
 // Set a default alpha-value for most shapes
 pub const ALPHA: f32 = 0.1;
